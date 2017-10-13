@@ -53,6 +53,6 @@ Maybe a linear model is not a good idea due to the local behaviour of the points
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to use a method more robust such as splines.
+A possible improvement would be to use a method more robust such as spline interpolation.
 
 Another potential improvement is to use cross validation to select hyperparameters in Lasso regression. 
