@@ -1,8 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
+## Writeup
 
 ---
 
@@ -22,6 +20,14 @@ The goals / steps of this project are the following:
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+
+My pipeline consisted of the following steps:
+
+* Identify white and yellow colors
+* 
+
+
+
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
 
