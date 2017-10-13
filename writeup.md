@@ -23,31 +23,36 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of the following steps:
 
-* Identify white and yellow colors
-* 
+* Convert image from RGB to HSV color-space (it is more easy to do the following step in HSV color-space)
+* We threshold the HSV image for a range of yellow and white colors, in this step the converted image is in gray scale
+* Define a kernel size of 5 and apply Gaussian smoothing
+* We apply canny edge detector
+* A triangle region was defined in order to discard edges (the camera has a fixed position)
+* Hough transform is applied in order to detect the lane lines
+
+Try and error approach was used to find the parameters of the previous steps. 
 
 
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by applying linear models.
+If the amount of points to estimate a single line on the left and right lanes is less than 30, a simple linear model is used to
+interpolate the lane line. Otherwise Lasso regression was used. To estimate the hyperparameter $\alpha$ we try values in the range 
+between 0.5 and 10. The following images are examples of the final output of the pipeline:
 
-
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 ![alt text][image1]
+
+![SolidWhiteCurve](solidWhiteCurve.jpg "solidWhiteCurve")
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+Maybe a linear model is not a good idea due to the local behaviour of the points belonging to a lane lane.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to use a method more robust such as splines.
 
-Another potential improvement could be to ...
+Another potential improvement is to use cross validation to select hyperparameters in Lasso regression. 
