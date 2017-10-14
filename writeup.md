@@ -39,7 +39,7 @@ between 0.5 and 10. The following images are examples of the final output of the
 
 ![whiteCarLaneSwitch](https://raw.githubusercontent.com/ricardoues/CarND-LaneLines-P1/master/test_images_output/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch")
 
-
+<iframe width="854" height="480" src="https://www.youtube.com/embed/yrRPLBYiiEc" frameborder="0" allowfullscreen></iframe>
 
 
 ### 2. Identify potential shortcomings with your current pipeline
