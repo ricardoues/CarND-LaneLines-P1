@@ -29,12 +29,11 @@ Try and error approach was used to find the parameters of the previous steps.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by applying linear models.
 If the amount of points to estimate a single line on the left and right lanes is less than 30, a simple linear model was used to
-interpolate the lane line. Otherwise Lasso regression was used. To estimate the hyperparameter $\alpha$, we try values in the range 
+interpolate the lane line. Otherwise Lasso regression was used. To estimate the hyperparameter alpha, we try values in the range 
 between 0.5 and 10. The following images are examples of the final output of the pipeline:
 
 
-[image1]: ./test_images_output/solidWhiteCurve.jpg ""
-
+![solidWhiteCurve](./test_images_output/solidWhiteCurve "solidWhiteCurve")
 
 
 
