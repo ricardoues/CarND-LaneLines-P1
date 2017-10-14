@@ -35,6 +35,11 @@ between 0.5 and 10. The following images are examples of the final output of the
 
 ![solidWhiteCurve](https://raw.githubusercontent.com/ricardoues/CarND-LaneLines-P1/master/test_images_output/solidWhiteCurve.jpg "solidWhiteCurve")
 
+![solidYellowCurve](https://raw.githubusercontent.com/ricardoues/CarND-LaneLines-P1/master/test_images_output/solidYellowCurve.jpg "solidYellowCurve")
+
+![whiteCarLaneSwitch](https://raw.githubusercontent.com/ricardoues/CarND-LaneLines-P1/master/test_images_output/whiteCarLaneSwitch.jpg "whiteCarLaneSwitch")
+
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
