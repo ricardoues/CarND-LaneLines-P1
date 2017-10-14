@@ -33,7 +33,7 @@ interpolate the lane line. Otherwise Lasso regression was used. To estimate the 
 between 0.5 and 10. The following images are examples of the final output of the pipeline:
 
 
-![solidWhiteCurve](./test_images_output/solidWhiteCurve "solidWhiteCurve")
+![solidWhiteCurve](https://raw.githubusercontent.com/ricardoues/CarND-LaneLines-P1/master/test_images_output/solidWhiteCurve.jpg "solidWhiteCurve")
 
 
 
