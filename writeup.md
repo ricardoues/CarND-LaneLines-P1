@@ -10,11 +10,6 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
 ---
 
 ### Reflection
@@ -38,9 +33,8 @@ interpolate the lane line. Otherwise Lasso regression was used. To estimate the 
 between 0.5 and 10. The following images are examples of the final output of the pipeline:
 
 
-![alt text][image1]
+[image1]: ./test_images_output/solidWhiteCurve.jpg ""
 
-![SolidWhiteCurve](solidWhiteCurve.jpg "solidWhiteCurve")
 
 
 
