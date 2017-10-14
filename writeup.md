@@ -21,9 +21,9 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of the following steps:
+My pipeline is made up by the following steps:
 
-* Convert image from RGB to HSV color-space (it is more easy to do the following step in HSV color-space)
+* Convert image from RGB to HSV color-space (it is more easy to do the next step in HSV color-space)
 * We threshold the HSV image for a range of yellow and white colors, in this step the converted image is in gray scale
 * Define a kernel size of 5 and apply Gaussian smoothing
 * We apply canny edge detector
@@ -32,10 +32,9 @@ My pipeline consisted of the following steps:
 
 Try and error approach was used to find the parameters of the previous steps. 
 
-
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by applying linear models.
-If the amount of points to estimate a single line on the left and right lanes is less than 30, a simple linear model is used to
-interpolate the lane line. Otherwise Lasso regression was used. To estimate the hyperparameter $\alpha$ we try values in the range 
+If the amount of points to estimate a single line on the left and right lanes is less than 30, a simple linear model was used to
+interpolate the lane line. Otherwise Lasso regression was used. To estimate the hyperparameter \alpha, we try values in the range 
 between 0.5 and 10. The following images are examples of the final output of the pipeline:
 
 
